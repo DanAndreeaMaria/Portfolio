@@ -1,0 +1,544 @@
+/*---HERO IMAGE + NAVBAR---*/
+.hero-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 80%;
+  position: fixed;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-family: Poppins;
+  color: #FF4C29;
+}
+
+.navbar-brand:hover {
+  color: #FF4C29;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-family: Poppins;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #FF4C29;
+}
+
+.nav-item {
+  margin-left: 180px;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.navbar-toggler {
+  background-color: #FF4C29;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+  opacity: 65%;
+  filter: blur(3px);
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.hero-color {
+  height: 100vh;
+}
+
+.hero-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: #241468;
+  position: absolute;
+  top: 80%;
+}
+
+/*-----SECTION TWO-----*/
+.titles-1 {
+  font-family: Poppins;
+  font-size: 50px;
+  color: orange;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4 {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #bbb;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-4 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-4::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #bbb;
+  top: 15px;
+  border-radius: 50%;
+}
+
+/* Place the container to the left */
+.left-4 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-4 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-4::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgba(25, 55, 109, 1);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgba(25, 55, 109, 1);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-4::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgba(71, 78, 104, 1);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgba(71, 78, 104, 1) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-4::after {
+  left: -14px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-4::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-4 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-4::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-4::after,
+  .right-4::after {
+    left: 18px;
+  }
+
+  .left-4::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-4 {
+    left: 0%;
+  }
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(11, 36, 71, 1),
+    rgba(25, 55, 109, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(11, 36, 71, 1),
+    rgba(25, 55, 109, 1)
+  );
+}
+
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #f093fb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(64, 66, 88, 1),
+    rgba(71, 78, 104, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to left,
+    rgba(64, 66, 88, 1),
+    rgba(71, 78, 104, 1)
+  );
+}
+
+.fa-graduation-cap, .fa-briefcase {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/*-----CONTACT SECTION-----*/
+.contact-section {
+  background-color: #27374D;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #FF4C29;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #FF4C29;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container-form {
+  width: 50%;
+  border-radius: 5px;
+  background-color: none;
+  padding: 50px;
+
+  flex: 1; /* Allow the columns to grow and shrink evenly */
+  margin: 10px;  /* Add some margin between columns */
+  box-sizing: border-box;
+}
+
+/* Use a media query to change the layout on smaller screens */
+  @media (max-width: 1000px) {
+    .container-form {
+      flex-basis: 100%; /* Make columns stack vertically on small screens */
+      margin: 0; /* Remove margin on small screens */
+    }
+  }
+
+  @media (max-width: 1300px) {
+    iframe {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    iframe {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+label, option, input, textarea  {
+  font-family: Poppins;
+  color: #FF4C29;
+}
+
+#country {
+  font-family: Poppins;
+}
+
+
+/*-----WEBPAGES-----*/
+.titles-2 {
+  font-family: Poppins;
+  font-size: 50px;
+  color: #0b2447;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: Poppins;
+  font-size: 50px;
+  color: black;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  /* background-color: orange; */
+}
+
+.webpages-col {
+  background-color: orange;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-left: 150px;
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+.webpages-col-2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-left: 150px;
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .webpages-col, .webpages-col-2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 200px; */
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .webpages-col, .webpages-col-2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 120px; */
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .webpages-col, .webpages-col-2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .webpages-col, .webpages-col-2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+  }
+}
+
+.cards {
+  width: 400px;
+  border-radius: 5%;
+  background-color: white;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out; 
+}
+
+.cards-2 {
+  width: 400px;
+  border-radius: 5%;
+  background-color: orange;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cards:hover {
+  transform: scale(1.1);
+   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
+
+.align-webpages-row {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: orange;
+  height: 1000px;
+  width: 100%;
+}
+
+.align-webpages-row-2 {
+  content: "";
+  display: table; 
+  clear: both; 
+  background-color: white; 
+  height: 1000px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/*-----------------------*/
+
+@media screen and (max-width: 1200px) {
+  .webpages-col {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card-title {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+.card-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.btn {
+  font-family: Poppins;
+  font-size: 20px;
+  background-color: #454875;
+  color: white;
+  margin: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #71728a;
+  color: white;
+}
+
+/*ANIMATIONS*/
+#sec-2 {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+#sec-2.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.line {
+  border: 1px solid gray;
+}
