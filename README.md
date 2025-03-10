@@ -20,16 +20,16 @@ This is a **responsive** and **animated** personal portfolio website built using
 ## Installation 
 
 1. Clone the repository: git clone https://github.com/DanAndreeaMaria/Portfolio
-2. NAvigate to the project folder: cd Portfolio
+2. Navigate to the project folder: cd Portfolio
 3. Open index.html in your browser
 
 ## File Structure
 
-portfolio-website 
-┣ index.html 
-┣  style.css 
-┣ assets 
-┣ images/ 
-┃ ┗ fonts/ 
-┣ README.md
+portfolio-website <br>
+┣ index.html <br>
+┣  style.css <br>
+┣ assets <br>
+┣ images/ <br>
+┃ ┗ fonts/ <br>
+┣ README.md <br>
 
